@@ -1,0 +1,115 @@
+.service,
+.serviceInvert {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  /* min-height: 630px;
+  align-items: center;  */
+  padding: 15rem 20rem;
+  gap: 3rem;
+  margin: 7rem 0;
+  position: relative;
+}
+
+.serviceInvert {
+  flex-direction: row-reverse;
+}
+
+.servicesHeading {
+  text-align: center;
+}
+
+.serviceImageSection,
+.serviceImageSectionInvert {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.serviceImageSection {
+  /* align-items: flex-end; */
+  align-items: start;
+}
+
+.serviceImageSectionInvert {
+  align-items: flex-start;
+}
+
+.serviceImageSection,
+.serviceTextSection {
+  /* width: 50%; */
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.serviceImageSection > button,
+.serviceImageSectionInvert > button {
+  margin-top: 4rem;
+}
+
+.serviceTextSection {
+  color: white;
+  width: 50%;
+}
+
+.serviceText > p {
+  font-weight: 600;
+}
+
+.floatingCirclesTopLeft {
+  position: absolute;
+  right: 150px;
+  top: -80px;
+}
+
+.floatingCirclesBottomLeft {
+  position: absolute;
+  right: 150px;
+  bottom: -80px;
+}
+
+.mobServiceCta {
+  display: none;
+}
+
+@media (width <= 1024px) {
+  .serviceBlock {
+    margin: 0 3rem;
+  }
+
+  .service,
+  .serviceInvert {
+    background-image: none !important;
+    padding: 20px;
+    flex-direction: column;
+    min-height: auto;
+    border-radius: 8px;
+    align-items: flex-start;
+  }
+
+  .floatingCirclesTopLeft {
+    display: none;
+  }
+
+  .floatingCirclesBottomLeft {
+    display: none;
+  }
+
+  .serviceCta {
+    display: none;
+  }
+
+  .mobServiceCta {
+    display: block;
+  }
+
+  .serviceImageSectionInvert {
+    align-self: center;
+  }
+
+  .serviceImageSection,
+  .serviceTextSection {
+    width: 100%;
+    align-items: center;
+  }
+}

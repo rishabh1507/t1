@@ -1,0 +1,66 @@
+.hamburgerMenuBlock {
+  background: var(
+    --Blue-Gradient,
+    linear-gradient(284deg, rgba(17, 17, 19, 1) 14.46%, #2b3a67 106.05%)
+  );
+  position: fixed;
+  right: -100%;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  padding: 1rem;
+  opacity: 0;
+  transition: right 1s ease, opacity 1s ease;
+}
+
+.hamburgerMenuBlock.open {
+  right: 0;
+  opacity: 1;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 30px;
+  color: #fff;
+  margin: 20px 50px;
+  border-radius: 100px;
+  font-weight: 500;
+  padding: 0;
+}
+
+.hamburgerMenu {
+  margin: 50px;
+  color: #fff;
+}
+
+.menuItem {
+  margin-bottom: 5rem;
+  cursor: pointer;
+  position: relative;
+  align-self: center;
+}
+
+.menuItem h4 {
+  letter-spacing: 3px;
+  margin: 0;
+  font-weight: 500;
+}
+
+.submenu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.submenu li {
+  padding: 10px;
+  font-size: 19px;
+}
+
+.dropdownItem {
+  display: flex;
+  gap: 10px;
+}

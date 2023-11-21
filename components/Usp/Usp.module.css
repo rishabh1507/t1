@@ -1,0 +1,45 @@
+.uspSection {
+  margin: 4rem 0;
+}
+
+.uspHeading {
+  text-align: center;
+}
+
+.uspList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 6rem;
+  align-items: baseline;
+}
+
+.usp {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.uspIcon {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.uspBorder {
+  margin: 1rem;
+  border-bottom: 2px solid #2b3a67;
+  width: 30%;
+}
+
+.uspText > p {
+  text-align: center;
+  font-weight: 600;
+}
+
+@media (width <= 768px) {
+  .usp,
+  .uspIcon {
+    width: 30%;
+  }
+}

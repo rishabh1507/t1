@@ -1,0 +1,133 @@
+.pricingCardsContainer {
+  display: flex;
+  overflow-x: auto;
+  justify-content: center;
+  gap: 1rem;
+  padding: 5rem 10rem 10rem 10rem;
+  align-items: stretch;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.pricingCardsContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.pricingCard {
+  position: relative;
+  color: #fff;
+  text-align: center;
+  /* border-radius: 10px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.label {
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  border-radius: 1rem;
+  background: var(--Checkbox-Green, #94ffd2);
+  padding: 0.5rem 2rem;
+  color: black;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.planPrice {
+  font-weight: 900;
+  color: white;
+  margin: 0;
+}
+
+.featureWithIconRight img {
+  vertical-align: text-top;
+  margin-left: 1.6rem;
+}
+
+.category {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.planDetails {
+  padding: 2rem;
+}
+
+.pricingCardBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 40rem;
+}
+
+.features {
+  text-align: start;
+  flex-grow: 1;
+  padding: 0 3rem;
+}
+
+.features ul {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+}
+
+.features li {
+  display: flex;
+  align-items: baseline;
+  padding: 1rem 0;
+}
+
+.tick {
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.borderBottom {
+  border-bottom: 2px solid #fff;
+}
+
+.contactButton a {
+  display: inline-block;
+  padding: 0.5rem 2.4rem;
+  text-decoration: none;
+  margin: 2rem 0 3rem 0;
+  border-radius: 0.5rem;
+  background: var(--Orange-1, #d1551f);
+  box-shadow: 0px 0.7rem 2.2rem 0px rgba(0, 0, 0, 0.25);
+  color: white;
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+
+.example {
+  display: flex;
+  flex-direction: column;
+}
+
+.example a {
+  text-decoration: none;
+  margin: 1rem;
+  color: #c05b0e;
+}
+
+.example a:hover {
+  color: #d1551f;
+}
+
+.example a:active {
+  color: #152d45;
+}
+
+@media (width <= 768px) {
+  .pricingCardsContainer {
+    justify-content: flex-start;
+    padding: 2rem;
+  }
+  .pricingCardBlock {
+    min-width: 250px;
+  }
+}

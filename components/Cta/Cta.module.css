@@ -1,0 +1,50 @@
+.cta {
+  position: relative;
+  background: #151c31;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ctaHeading {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.ctaHeading > h5 {
+  margin: 0;
+  font-weight: 300;
+  color: #e7ecef;
+  padding-bottom: 17px;
+}
+
+.ctaHeading > h4 {
+  margin: 0;
+}
+
+.squares {
+  position: absolute;
+  top: -3rem;
+  left: 10rem;
+}
+
+.circles {
+  position: absolute;
+  bottom: -3rem;
+  right: 10rem;
+}
+
+.squares img,
+.circles img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (width <= 786px) {
+  .squares img {
+    width: 50%;
+  }
+  .circles {
+    width: 20%;
+  }
+}

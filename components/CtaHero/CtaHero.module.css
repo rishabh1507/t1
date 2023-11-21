@@ -1,0 +1,93 @@
+.homeHeroSection {
+  margin-top: -15rem;
+  background: var(--Dark-Blue-2, #152d45);
+  background-position: center;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 90vh;
+}
+
+.homeHeroSection img {
+  width: 60%;
+}
+
+.heroCtas {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  padding: 20px;
+  top: 60%;
+  transform: translateY(-60%);
+}
+
+.ctaHeroBlock {
+  flex-grow: 1;
+}
+
+.heroCta {
+  background: white;
+  padding: 6.5rem;
+  text-align: center;
+  min-width: 32rem;
+  height: 33rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.heroCta:hover > svg {
+  transform: translateY(5px);
+  transition: 600ms;
+}
+
+.heroCta > h5 {
+  margin: 0;
+}
+
+.heroCta > p {
+  font-weight: 600;
+}
+
+.heroCta svg {
+  flex-shrink: 0;
+}
+
+@media (width <= 768px) {
+  .heroCta {
+    min-width: 35rem;
+    height: 36rem;
+    padding: 1rem;
+  }
+  .heroCta > h5 {
+    flex-shrink: 0;
+  }
+  .heroCta > p {
+    margin: 10px;
+  }
+  .heroCta svg {
+    width: 10%;
+  }
+  .homeHeroSection {
+    width: auto;
+  }
+}
+
+@media (width <= 480px) {
+  .heroCta {
+    min-width: auto;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .heroCta > h5 {
+    font-size: 16px;
+  }
+}

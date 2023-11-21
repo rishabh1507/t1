@@ -1,0 +1,54 @@
+.footer {
+  background-color: #000;
+  color: #fff;
+}
+
+.footerItems {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 3rem;
+}
+
+.services {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.serviceItem {
+  padding: 1.5rem;
+}
+
+.socialIcons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 6rem;
+}
+
+.socialIcons a {
+  text-decoration: none;
+  color: #fff;
+  margin: 1.5rem 0;
+}
+
+.bottomBar {
+  padding: 2rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+@media (width <= 768px) {
+  .logo {
+    width: 20%;
+  }
+
+  .socialIcons {
+    padding: 0 2rem;
+  }
+
+  .socialIcons a {
+    width: 50%;
+  }
+}

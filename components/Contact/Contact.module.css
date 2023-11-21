@@ -1,0 +1,150 @@
+.contactWrapper {
+  background: url(../../public/images/leftGreyLines.svg);
+  background-repeat: no-repeat;
+  background-position-x: left;
+  background-position-y: bottom;
+  background-size: contain;
+  margin-bottom: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10rem 0;
+}
+
+.contactHeading {
+  text-align: center;
+  margin: 0;
+}
+
+.contactInfo > span {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.contactInfo > span > p {
+  font-weight: 800;
+  margin: 1rem 0;
+}
+
+.contactFormBlock {
+  width: 50%;
+  /* margin-top: 3rem; */
+}
+
+.contactSection {
+  display: flex;
+  justify-content: center;
+}
+
+.contactBlock {
+  display: flex;
+  align-items: center;
+  gap: 3.5rem;
+  /* width: 60%; */
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.contactSocialSection {
+  display: flex;
+  flex-direction: column;
+  gap: 3.3rem;
+}
+
+.contactFormSection {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 55rem;
+}
+
+.contactFormSection > button {
+  width: 20rem;
+  margin: 0;
+}
+
+.contactImageSection {
+  margin-top: 6rem;
+}
+
+.errorMsg {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+  font-weight: 700;
+}
+
+.successMsg {
+  color: green;
+  font-size: 14px;
+  margin-top: 5px;
+  font-weight: 700;
+}
+
+@media (width <= 768px) {
+  .contactWrapper {
+    align-items: normal;
+  }
+
+  .contactBlock {
+    display: flex;
+    flex-direction: column;
+    background-color: #ecebeb;
+    padding: 4rem;
+    border-radius: 0.8rem;
+    margin: 5rem;
+    width: auto;
+  }
+
+  .contactSocialSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .contactSocialSection img {
+    width: 80%;
+  }
+
+  .contactFormBlock {
+    width: 100%;
+    margin: 0;
+  }
+
+  .contactImageSection {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    gap: 2rem;
+    width: 90%;
+  }
+
+  .contactInfo {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+
+  .contactInfo > span {
+    gap: 0;
+  }
+
+  .contactInfo img {
+    margin: 0.5rem;
+  }
+
+  .contactImg {
+    order: 2;
+  }
+
+  .contactFormSection {
+    width: auto;
+  }
+
+  .contactFormSection > button {
+    /* width: auto; */
+    align-self: center;
+  }
+}

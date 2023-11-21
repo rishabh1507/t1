@@ -1,0 +1,13 @@
+.promobar {
+  background: var(
+    --Blue-Gradient,
+    linear-gradient(284deg, rgba(17, 17, 19, 1) 14.46%, #2b3a67 106.05%)
+  );
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
